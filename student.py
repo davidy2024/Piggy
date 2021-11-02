@@ -58,6 +58,9 @@ class Piggy(PiggyParent):
     '''
     def yang(self):
       self.deg_fwd(360)
+      self.right(primary = 40, counter =-40)
+      self.sleep(1)
+      self.stop()
       
     def dance(self):
         """A higher-ordered algorithm to make your robot dance"""
