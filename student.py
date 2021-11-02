@@ -59,7 +59,7 @@ class Piggy(PiggyParent):
     def yang(self):
       self.deg_fwd(360)
       time.sleep(3)
-      self.right(primary = 50, counter =-50)
+      self.right(primary = 20, counter =-20)
       self.sleep(1.2)
       self.stop()
       
