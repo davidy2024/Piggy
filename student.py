@@ -59,19 +59,19 @@ class Piggy(PiggyParent):
     def yang(self):
       self.deg_fwd(360)
       time.sleep(1)
-      self.right(primary = 48, counter =-40)
+      self.right(primary = 45, counter =-40)
       time.sleep(1)
       self.deg_fwd(360)
       time.sleep(1)
-      self.right(primary = 48, counter =-40)
+      self.right(primary = 45, counter =-40)
       time.sleep(1)
       self.deg_fwd(360)
       time.sleep(1)
-      self.right(primary = 48, counter =-40)
+      self.right(primary = 45, counter =-40)
       time.sleep(1)
       self.deg_fwd(360)
       time.sleep(1)
-      self.right(primary = 48, counter =-40)
+      self.right(primary = 45, counter =-40)
       time.sleep(1)
       self.stop()
       
@@ -80,6 +80,8 @@ class Piggy(PiggyParent):
         # TODO: check to see if it's safe before dancing
         
         # lower-ordered example...
+        self.deg_fwd(360)
+      time.sleep(1)
         self.right(primary=50, counter=50)
         time.sleep(2)
         self.stop()
