@@ -82,10 +82,12 @@ class Piggy(PiggyParent):
         # lower-ordered example...
         self.deg_fwd(360)
         time.sleep(1)
-        self.right(primary=100, counter=-100)
+        self.right(primary=50, counter=-50)
         time.sleep(1)
         self.deg_fwd(600)
-        self.left(primary=100, counter=-100)
+        time.sleep(1)        
+        self.left(primary=50, counter=-50)
+        time.sleep(1)
         self.stop()
         
 
