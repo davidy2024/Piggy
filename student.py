@@ -82,11 +82,11 @@ class Piggy(PiggyParent):
         # lower-ordered example...
         self.fwd()
         time.sleep(2)
-        self.right(primary=180, counter=-180)
+        self.right(primary=100, counter=-100)
         time.sleep(2)
         self.fwd()
         time.sleep(2)
-        self.left(primary=180, counter=-180)
+        self.left(primary=100, counter=-100)
         time.sleep(2)
         self.stop()
         
