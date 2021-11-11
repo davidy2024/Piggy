@@ -61,7 +61,7 @@ class Piggy(PiggyParent):
       while True:
         self.read_distance()
 
-    def yang(self):
+    def yang2(self):
       self.deg_fwd(360)
       time.sleep(1)
       self.right(primary = 44, counter =-40)
