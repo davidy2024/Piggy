@@ -56,6 +56,11 @@ class Piggy(PiggyParent):
     STUDENT PROJECTS
     ****************
     '''
+
+    def yang(self):
+      while True:
+        self.read_distance()
+
     def yang(self):
       self.deg_fwd(360)
       time.sleep(1)
@@ -108,7 +113,7 @@ class Piggy(PiggyParent):
         
 
     def safe_to_dance(self):
-        """ Does a 360 distance check and returns true if safe """
+        """ Does a 360 distance check and returns true if safe """ 
         pass
 
     def shake(self):
