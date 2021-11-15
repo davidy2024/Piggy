@@ -59,7 +59,11 @@ class Piggy(PiggyParent):
 
     def yang(self):
       while True:
-        self.read_distance()
+      self.fwd()
+      if self.read_distance()<300:
+        self.stop()
+      else:
+        pass
 
     def yang2(self):
       self.deg_fwd(360)
