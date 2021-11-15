@@ -60,7 +60,7 @@ class Piggy(PiggyParent):
     def yang(self):
       while True:
         self.fwd()
-        if self.read_distance()<300:
+        if self.read_distance() < 100:
           self.stop()
         else:
           pass
