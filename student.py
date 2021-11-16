@@ -63,11 +63,12 @@ class Piggy(PiggyParent):
       while True:
         if self.read_distance() > 250:
           self.stop()
-          for x in range(3):
+          for x in range(1):
             self.servo(self.MIDPOINT + 300)
             time.sleep(.15)
             self.servo(self.MIDPOINT - 300)
             time.sleep(.15)
+          
 
         
     
