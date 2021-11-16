@@ -71,8 +71,7 @@ class Piggy(PiggyParent):
                         self.servo(self.MIDPOINT - 300)
                         time.sleep(.15)
 
-        else:
-          self.fwd()
+        
     
     
     def yang3(self):
