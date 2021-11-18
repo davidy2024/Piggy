@@ -46,7 +46,8 @@ class Piggy(PiggyParent):
         # loop and print the menu...
         
         
-            print(key + ":" + menu[key][0])
+            
+        print(key + ":" + menu[key][0])
         # store the user's answer
         ans = str.lower(input("Your selection: "))
         # activate the item selected
