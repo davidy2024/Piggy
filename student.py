@@ -44,7 +44,8 @@ class Piggy(PiggyParent):
                 "y": ("Kaiyi Yang Test", self.yang)
                 }
         # loop and print the menu...
-        for key in sorted(menu.keys()):
+        
+        
             print(key + ":" + menu[key][0])
         # store the user's answer
         ans = str.lower(input("Your selection: "))
@@ -63,7 +64,6 @@ class Piggy(PiggyParent):
       while True:
         if self.read_distance() > 250:
           self.stop()
-        for x in range(1):
           self.servo(self.MIDPOINT + 300)
           time.sleep(.15)
           self.servo(self.MIDPOINT - 300)
