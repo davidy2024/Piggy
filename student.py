@@ -86,7 +86,7 @@ class Piggy(PiggyParent):
           
         else:
           self.fwd()
-          
+          time.sleep(2)
 
         
     
