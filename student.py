@@ -60,8 +60,7 @@ class Piggy(PiggyParent):
     def yang(self):
       
       while True:
-        self.fwd()
-        time.sleep(1)
+        
 
         if self.read_distance() > 150:
           self.stop()
@@ -86,6 +85,10 @@ class Piggy(PiggyParent):
             time.sleep(2)
             self.left(primary = 41, counter =-37)
             time.sleep(1)
+        elif:
+          self.fwd()
+          time.sleep(1)
+
           
     
         
