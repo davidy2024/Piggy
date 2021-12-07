@@ -60,12 +60,12 @@ class Piggy(PiggyParent):
       while True:
         self.fwd()
         self.servo(self.MIDPOINT + 300)
-        time.sleep(1)
+        time.sleep(0.2)
         left = self.read_distance()
         self.servo(self.MIDPOINT - 300)
-        time.sleep(1)
+        time.sleep(0.2)
         right = self.read_distance()
-        if left < 200:
+        if right < 200:
           self.left()
           time.sleep(1)
           self.right()
