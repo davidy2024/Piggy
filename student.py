@@ -56,6 +56,28 @@ class Piggy(PiggyParent):
     ****************
     '''
 
+    def yang4(self):
+      while True:
+        
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     def yang(self):
       
@@ -90,6 +112,8 @@ class Piggy(PiggyParent):
             self.servo(self.MIDPOINT)
         
         else:
+            pass
+            time.sleep(1)
           self.fwd()
     
         
