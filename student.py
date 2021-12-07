@@ -72,7 +72,7 @@ class Piggy(PiggyParent):
           time.sleep(1)
           self.fwd()
           time.sleep(1) 
-        if left < 200:
+        elif left < 200:
           self.right()
           time.sleep(1)
           self.left()
