@@ -56,30 +56,39 @@ class Piggy(PiggyParent):
     ****************
     '''
 
-    def yang4(self):
-      while True:
-        
-
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def yang(self):
+      while True:
+        for ang in range(self.MIDPOINT-400, self.MIDPOINT+401, 100):
+                self.servo(ang)
+                time.sleep(.1)
+                if self.read_distance() < 250:
+                  self.left()
+                  time.sleep(.1)
+                  self.right()
+                  time.sleep(.1)
+                  self.fwd()
+                  time.sleep(1) 
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    def yang4(self):
       
       while True:
        
