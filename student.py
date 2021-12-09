@@ -66,6 +66,7 @@ class Piggy(PiggyParent):
         time.sleep(0.2)
         right = self.read_distance()
         if right < 150 < 300:
+          self.stop()
           self.left()
           time.sleep(1)
           self.right()
@@ -73,6 +74,7 @@ class Piggy(PiggyParent):
           self.fwd()
           time.sleep(1) 
         if left < 150 < 300:
+          self.stop()
           self.right()
           time.sleep(1)
           self.left()
