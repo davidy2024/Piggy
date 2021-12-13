@@ -82,7 +82,7 @@ class Piggy(PiggyParent):
           time.sleep(1)
           self.fwd()
           time.sleep(1) 
-        elif midpoint = < 150:
+        elif midpoint < 150:
           self.stop()
           self.servo(self.MIDPOINT + 300)
           time.sleep(1)
