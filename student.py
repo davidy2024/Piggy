@@ -59,35 +59,35 @@ class Piggy(PiggyParent):
     def yang(self):
       while True:
         self.fwd()
-        self.servo(self.MIDPOINT + 300)
+        self.servo(self.MIDPOINT + 500)
         time.sleep(0.2)
         left = self.read_distance()
         self.servo(self.MIDPOINT)
         time.sleep(0.2)
         midpoint = self.read_distance()
-        self.servo(self.MIDPOINT - 300)
+        self.servo(self.MIDPOINT - 500)
         time.sleep(0.2)
         right = self.read_distance()
-        if right < 150:
+        if right < 200:
           self.left()
           time.sleep(1)
           self.right()
           time.sleep(1)
           self.fwd()
           time.sleep(1) 
-        if left < 150:
+        if left < 200:
           self.right()
           time.sleep(1)
           self.left()
           time.sleep(1)
           self.fwd()
           time.sleep(1) 
-        elif midpoint < 150:
+        elif midpoint < 200:
           self.stop()
-          self.servo(self.MIDPOINT + 300)
+          self.servo(self.MIDPOINT + 500)
           time.sleep(1)
           left = self.read_distance()
-          self.servo(self.MIDPOINT - 300)
+          self.servo(self.MIDPOINT - 500)
           time.sleep(1)
           right = self.read_distance()
           if left > right :
