@@ -62,51 +62,52 @@ class Piggy(PiggyParent):
         self.servo(self.MIDPOINT + 300)
         time.sleep(0.2)
         left = self.read_distance()
+        self.servo(self.MIDPOINT)
+        time.sleep(0.2)
+        midpoint = self.read_distance()
         self.servo(self.MIDPOINT - 300)
         time.sleep(0.2)
         right = self.read_distance()
-        if right < 150 < 300:
-          self.stop()
+        if right < 150:
           self.left()
           time.sleep(1)
           self.right()
           time.sleep(1)
           self.fwd()
           time.sleep(1) 
-        if left < 150 < 300:
-          self.stop()
+        if left < 150:
           self.right()
           time.sleep(1)
           self.left()
           time.sleep(1)
           self.fwd()
           time.sleep(1) 
-          if self.read_distance() < 150:
-            self.stop()
-            self.servo(self.MIDPOINT + 300)
+        elif midpoint = < 150:
+          self.stop()
+          self.servo(self.MIDPOINT + 300)
+          time.sleep(1)
+          left = self.read_distance()
+          self.servo(self.MIDPOINT - 300)
+          time.sleep(1)
+          right = self.read_distance()
+          if left > right :
+            self.left(primary = 43, counter =-40)
             time.sleep(1)
-            left = self.read_distance()
-            self.servo(self.MIDPOINT - 300)
+            self.fwd()
+            time.sleep(2)
+            self.right(primary = 41, counter =-37)
             time.sleep(1)
-            right = self.read_distance()
-            if left > right :
-              self.left(primary = 43, counter =-40)
-              time.sleep(1)
-              self.fwd()
-              time.sleep(2)
-              self.right(primary = 41, counter =-37)
-              time.sleep(1)
-              self.servo(self.MIDPOINT)
+            self.servo(self.MIDPOINT)
             
 
-            elif right > left :
-              self.right(primary = 43, counter =-40)
-              time.sleep(1)
-              self.fwd()
-              time.sleep(2)
-              self.left(primary = 41, counter =-37)
-              time.sleep(1)
-              self.servo(self.MIDPOINT)
+          elif right > left :
+            self.right(primary = 43, counter =-40)
+            time.sleep(1)
+            self.fwd()
+            time.sleep(2)
+            self.left(primary = 41, counter =-37)
+            time.sleep(1)
+            self.servo(self.MIDPOINT)
 
 
         
