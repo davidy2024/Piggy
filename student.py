@@ -65,14 +65,14 @@ class Piggy(PiggyParent):
           time.sleep(1.1)
           left = self.read_distance()
           self.right(primary = 43, counter =-40)
-          time.sleep(2.3)
+          time.sleep(2.2)
           right = self.read_distance()
           if right > left:
             self.fwd()
             time.sleep(1)
           elif left > right:
             self.left(primary = 43, counter =-40)
-            time.sleep(2.3)
+            time.sleep(2.2)
         
         
 
