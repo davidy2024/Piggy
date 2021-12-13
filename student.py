@@ -75,8 +75,9 @@ class Piggy(PiggyParent):
             self.left()
             time.sleep(2)
         elif:
+          pass
+          time.sleep(1)
           self.fwd()
-
 
 
 
