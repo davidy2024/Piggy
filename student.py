@@ -56,7 +56,40 @@ class Piggy(PiggyParent):
     ****************
     '''
 
+
     def yang(self):
+      while True:
+        
+        if self.read_distance() < 150:
+          self.stop()
+          self.left()
+          time.sleep(1)
+          left = self.read_distance()
+          self.right()
+          time.sleep(2)
+          right = self.read_distance()
+          if right > left:
+            self.fwd()
+            time.sleep(1)
+          elif left > right:
+            self.left()
+            time.sleep(2)
+        elif:
+          self.fwd()
+
+
+
+
+
+
+
+
+
+
+
+
+
+    def yang6(self):
       while True:
         self.fwd()
         self.servo(self.MIDPOINT + 500)
